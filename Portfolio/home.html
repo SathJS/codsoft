@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-HjxjLK1bD00n1RhiH06I3zhiWYfDAj/6pgGx5Nm90zTmMrGd41A5J46RlFlu5fVx" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Sathvika J S</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile" id="profile">
+        <div class="section_text">
+            <p class="section_text_p1">HELLO </p>
+            <h2>I'm Sathvika <br> a Web Developer</h2>
+            <p class="section_text_p2">
+                I'm Sathvika, a dedicated web developer specializing in creating seamless and visually appealing online experiences. With a blend of creativity and technical expertise, I turn ideas into engaging websites that leave a lasting impression. Let's build something remarkable together!
+            </p>
+            <div class="btn_container">
+                <button class="btn_1" onclick="window.open('./assests/Sathvika_J S_Resume.pdf')">Open Resume</button>
+                <button class="btn_2" onclick="location.href='#contact'">Contact </button>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="./assests/img1.jpg" >
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <p class="a-p1" >Get To Know More</p>
+        <h1 class="a-title">About Me</h1>
+        <div class="section-container">
+            <div class="image-container">
+                <img src="./assests/img2.jpg" >
+            </div>
+            <div class="text-container">
+                <p>Welcome to my corner of the web! I'm Sathvika, a results-oriented web developer fueled by a passion for turning innovative ideas into digital reality. With a solid foundation in both front-end and back-end technologies, I thrive on crafting clean, efficient, and user-friendly solutions.<br><br>
+
+                    My journey in web development began with a genuine love for problem-solving and a curiosity to explore the ever-evolving world of technology. Over the years, I've honed my skills in HTML, CSS, JavaScript, and various frameworks to create seamless and visually appealing websites.<br><br>
+                    
+                    I believe in the power of collaboration and continuous learning. My goal is to not just meet expectations but to exceed them, delivering results that go beyond code.
+                    
+                </p>
+            </div>
+        </div>    
+    </section>
+
+    <section  class="skills" id="skills">
+        <div class="container">
+            <p class="a-p1" >Explore My</p>
+            <h1 class="a-title">Skills</h1>
+            <div class="skills-categories">
+                <div class="category">
+                    <h3>Frontend Developement</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Backend Developement</h3>
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Web Developement</h3>
+                    <ul>
+                        <li>Wordpress</li>
+                        <li>Elementor</li>
+                    </ul>    
+                </div>
+            
+           
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h1 class="a-title">Projects</h1>
+    
+        <div class="project-grid">
+            
+    
+            <div class="project">
+                <img src="./assests/pro2.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h3 class="a-title">Fruits Donation</h3>
+                    <p>A Website that helps to gift and donate Fruits to your loved ones and others.</p>
+                    <div class="pd">
+                        <a href="project2-demo.html" target="_blank">Demo</a>
+                        <a href="project2-github.html" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="./assests/pro1.jpg" alt="Project 2">
+                <div class="project-details">
+                    <h3 class="a-title">Car Insurance</h3>
+                    <p>A Website that calculates you Car Insurance based on your car model.</p>
+                    <div class="pd">
+                        <a href="project1-demo.html" target="_blank">Demo</a>
+                        <a href="project1-github.html" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="project">
+                <img src="./assests/pro3.webp" alt="Project 3">
+                <div class="project-details">
+                    <h3 class="a-title">Library Management</h3>
+                    <p>A Website that manages the accounts of books in the library.</p>
+                    <div class="pd">
+                        <a href="project3-demo.html" target="_blank">Demo</a>
+                        <a href="project3-github.html" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2 class="a-title">Contact Me</h2>
+    
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button class="btn_1">Submit</button>
+            </form>
+        </div>
+        <p><br><br></p>
+        <h2 style="color: #14213d;">Contect With Me</h2>
+        <div class="social-icons">
+            <a href="#" target="_blank" class="social-icon"><img src="./assests/icons8-twitter-50.png" alt="Twitter"></a>
+            <a href="#" target="_blank" class="social-icon"><img src="./assests/icons8-linkedin-50.png" alt="LinkedIn"></a>
+            <a href="#" target="_blank" class="social-icon"><img src="./assests/icons8-github-48.png" alt="GitHub"></a>
+        </div>
+    </section>
+    
+</body>
+</html>

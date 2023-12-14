@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #14213d; 
+    padding: 20px;
+}
+
+nav {
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: #34c2db;
+}
+
+.name-designation {
+    text-align: right;
+    margin-top: 20px;
+}
+
+section{
+    margin: 0 10rem;
+    padding-top: 4vh;
+    height: 96vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+    background-color: #fff;
+}
+
+.section-container{
+    display: flex;
+}
+
+#profile{
+    display: flex;
+    height: 80vh;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_text{
+    margin-top: 10vh;
+}
+
+.section_text_p1{
+    font-size: small;
+}
+
+.section_text_p2{
+    font-size: 0.85rem;
+}
+
+.btn_container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn_1,
+.btn_2 {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 0.75rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn_1,
+.btn_2{
+    border: #14213d 0.1rem solid;
+}
+
+.btn_1:hover,
+.btn_2:hover {
+    cursor: pointer;
+}
+
+.btn_1,
+.btn_2:hover {
+    background: #14213d;
+    color: #fff;
+}
+
+.btn_1:hover{
+    color: #14213d;
+    background: #fff;
+}
+
+.btn_2{
+    background: none;
+}
+
+.btn_2:hover{
+    border: rgb(255, 255, 255) 0.1 rem solid;
+}
+
+/*About*/
+
+#about {
+    position: relative;
+}
+
+.a-p1,
+.a-title {
+    color: #14213d;
+    text-align: center;
+}
+
+.text-container {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/*Skills */
+
+#skills {
+    background-color: #ffff;
+}
+
+.skills-categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+/*Projects*/
+
+.projects {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+
+}
+
+.project-grid {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    
+}
+
+.project {
+    border-color: #14213d;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.project img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.project-details {
+    margin-top: 15px;
+}
+
+.project-details h3 {
+    color: #14213d;
+}
+
+.project-details p {
+    line-height: 1.6;
+}
+
+.project-details a {
+    font-size: x-small;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.75rem;
+    background-color: #14213d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+
+}
+
+.project-details a:hover {
+    border : #14213d 0.1rem solid;
+    color: #14213d;
+    background: #fff;
+}
+
+.pd {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*Contact*/
+
+
+.contact {
+    margin: 10%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.contact h2 {
+    color: #14213d;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.social-icon {
+
+    display: inline-block;
+    font-size: 36px;
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+}
